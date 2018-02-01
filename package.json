@@ -1,0 +1,36 @@
+{
+  "name": "brpoc",
+  "version": "0.0.1",
+  "description": "BR work for POC",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "clean": "rimraf dist/",
+    "install:nodeversion": "node --version",
+    "install:npmversion": "npm --version",
+    "lint": "eslint ./app --ext .js",
+    "lint:fix": "npm run lint -- --fix",
+    "prebuild": "npm run clean",
+    "preinstall": "npm run install:nodeversion && npm run install:npmversion"
+  },
+  "dependencies": {
+    "highcharts": "6.0.5",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "7.1.2",
+    "babel-preset-es2015": "6.22.0",
+    "babel-preset-react": "6.23.0",
+    "eslint": "4.16.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-react": "7.6.1",
+    "html-webpack-plugin": "2.30.1",
+    "rimraf": "2.6.2",
+    "webpack": "3.10.0",
+    "webpack-dev-middleware": "2.0.4",
+    "webpack-hot-middleware": "2.21.0"
+  }
+}
