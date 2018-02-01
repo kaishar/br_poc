@@ -1,4 +1,6 @@
-class Bye extends React.Component {
+import React, { Component } from 'react';
+
+class Bye extends Component {
   render() {
     return (
       <div>
