@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import Hello from './hello';
-import Bye from './bye';
+
+import AppHeader from './AppHeader';
+import HighMaps from './HighMaps';
+import MainHeader from './MainHeader';
+import styles from './main.scss';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Hello />
-        <Bye />
+        <MainHeader />
+        <AppHeader />
+        <HighMaps />
       </div>
     );
   }

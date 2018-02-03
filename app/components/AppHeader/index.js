@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 
-class Bye extends Component {
+class AppHeader extends Component {
   render() {
     return (
       <div>
-  		Bye React789!
       </div>
     );
   }
 }
 
-export default Bye;
+export default AppHeader;

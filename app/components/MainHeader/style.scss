@@ -1,0 +1,24 @@
+.main_header {
+    background-color: #EBEBEB;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    ._left {
+        ._title {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+    }
+    ._right {
+        font-size: 15px;
+        ._user {
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+    }
+    ._logout {
+        margin-right: 20px;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,18 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body,
+#br_app_id {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    #br_app_id>div {
+        height: 100%;
+    }
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
