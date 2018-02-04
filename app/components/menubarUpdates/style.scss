@@ -1,0 +1,41 @@
+.menubar_container {
+    display: flex;
+    width: 15%;
+    ._menu {
+        width: 18%;
+        background-color: #C9C0B9;
+        color: black;
+    }
+    ._updates {
+        width: 82%;
+        background-color: white;
+        ._header {
+            height: 35px;
+            background-color: #DDDDDD;
+        }
+        ._label {
+            height: 65px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            font-weight: bold;
+            border-bottom: 1px solid #DDDDDD;
+            ._first {
+                color: #958B84;
+                font-size: 16px;
+            }
+            ._second {
+                color: #FA1919;
+                font-size: 17px;
+            }
+        }
+        ._announcements {
+            color: #FA1919;
+            font-size: 13px;
+            ._items {
+                padding: 10px 2px 10px 15px;
+            }
+        }
+    }
+}

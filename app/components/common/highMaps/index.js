@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactHighmaps from 'react-highcharts/ReactHighmaps';
 import * as config from './config';
+import styles from './style.scss';
 
 class HighMapsWrapper extends Component {
   constructor(props) {
@@ -12,12 +13,9 @@ class HighMapsWrapper extends Component {
 
   render() {
     const mapConfig = config.unitedKingdom;
-    const divStyle = {
-      'width' : '50%'
-    };
 
     return (
-      <div style={divStyle}>
+      <div className={`${styles.map_container}`}>
         <ReactHighmaps config={mapConfig} />
       </div>
     );

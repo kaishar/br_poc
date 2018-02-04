@@ -1,5 +1,5 @@
-const ukMap = require('../../data/gb-all.geo');
-const europeMap = require('../../data/europe.geo');
+const ukMap = require('../../../data/gb-all.geo');
+const europeMap = require('../../../data/europe.geo');
 
 import _ from 'lodash';
 

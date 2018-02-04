@@ -1,0 +1,120 @@
+{
+    "tableHeader": [
+         {
+            "Header": "Activations",
+            "columns": [
+                {
+                    "Header": "Acquisition",
+                    "accessor": "acquisition"
+                },
+                {
+                    "Header": "Recontract",
+                    "accessor": "recontract"
+                },
+                {
+                    "Header": "Outright",
+                    "accessor": "outright"
+                },
+                {
+                    "Header": "Off-net",
+                    "accessor": "offnet"
+                },
+                {
+                    "Header": "TOTAL",
+                    "accessor": "total"
+                }
+            ]
+        },
+        {
+            "Header": "Shipments",
+            "columns": [
+                {
+                    "Header": "Actual Mix",
+                    "accessor": "actualMix"
+                },
+                {
+                    "Header": "Target Mix",
+                    "accessor": "targetMix"
+                }
+            ]
+        }
+    ],
+    "tableData": [
+        {
+            "region": "East Midlands",
+            "code": "EM",
+            "data": [
+                {
+                    "channel": "Enterprise",
+                    "acquisition": "20%",
+                    "recontract": "38%",
+                    "outright": "22%",
+                    "offnet": "20%",
+                    "total": 23729,
+                    "quantity": 28937,
+                    "actualMix": "4%"
+                },
+                {
+                    "channel": "Company Owned",
+                    "acquisition": "23%",
+                    "recontract": "45%",
+                    "outright": "13%",
+                    "offnet": "19%",
+                    "total": 183608,
+                    "quantity": 195397,
+                    "actualMix": "27%"
+                },
+                {
+                    "channel": "Franchises",
+                    "acquisition": "31%",
+                    "recontract": "45%",
+                    "outright": "15%",
+                    "offnet": "9%",
+                    "total": 212473,
+                    "quantity": 238734,
+                    "actualMix": "33%"
+                },
+                {
+                    "channel": "Online",
+                    "acquisition": "21%",
+                    "recontract": "42%",
+                    "outright": "12%",
+                    "offnet": "25%",
+                    "total": 40473,
+                    "quantity": 43534,
+                    "actualMix": "6%"
+                },
+                {
+                    "channel": "Call Centre",
+                    "acquisition": "40%",
+                    "recontract": "44%",
+                    "outright": "2%",
+                    "offnet": "14%",
+                    "total": 76473,
+                    "quantity": 86534,
+                    "actualMix": "12%"
+                },
+                {
+                    "channel": "Call Centre",
+                    "acquisition": "25%",
+                    "recontract": "51%",
+                    "outright": "18%",
+                    "offnet": "6%",
+                    "total": 116473,
+                    "quantity": 130534,
+                    "actualMix": "18%"
+                },
+                {
+                    "channel": "ALL CHANNELS",
+                    "acquisition": "29%",
+                    "recontract": "46%",
+                    "outright": "15%",
+                    "offnet": "13%",
+                    "total": 620473,
+                    "quantity": 720534,
+                    "actualMix": "100%"
+                }
+            ]
+        }
+    ]
+}

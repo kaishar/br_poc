@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import styles from './style.scss';
 
-class MainHeader extends Component {
+class AppHeader extends Component {
   render() {
     return (
       <div className={`${styles.main_header}`}>
@@ -19,4 +19,4 @@ class MainHeader extends Component {
   }
 }
 
-export default MainHeader;
+export default AppHeader;

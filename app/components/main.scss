@@ -8,11 +8,15 @@ html,
 body,
 #br_app_id {
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     #br_app_id>div {
         height: 100%;
     }
     padding: 0;
     margin: 0;
     height: 100%;
+}
+
+.main__app__container {
+    display: flex;
 }
