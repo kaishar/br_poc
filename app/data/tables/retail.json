@@ -1,42 +1,85 @@
 {
+    "sortOptions":[
+        {
+            "value" : "EM",
+            "name" : "East Midlands"
+        },
+        {
+            "value": "GL",
+            "name": "Greater London"
+        }
+    ],
     "tableHeader": [
-         {
+        {
+            "Header": "Channels",
+            "accessor": "channel",
+            "headerClassName": "react_table_th"
+        },
+        {
             "Header": "Activations",
+            "headerClassName": "react_table_th",
             "columns": [
                 {
                     "Header": "Acquisition",
+                    "className": "react_custom_data_rows",
+                    "headerClassName": "react_table_th",
                     "accessor": "acquisition"
                 },
                 {
                     "Header": "Recontract",
+                    "className": "react_custom_data_rows",
+                    "headerClassName": "react_table_th",
                     "accessor": "recontract"
                 },
                 {
                     "Header": "Outright",
+                    "className": "react_custom_data_rows",
+                    "headerClassName": "react_table_th",
                     "accessor": "outright"
                 },
                 {
                     "Header": "Off-net",
+                    "className": "react_custom_data_rows",
+                    "headerClassName": "react_table_th",
                     "accessor": "offnet"
                 },
                 {
                     "Header": "TOTAL",
+                    "className": "react_custom_data_rows",
+                    "headerClassName": "react_table_th",
                     "accessor": "total"
                 }
             ]
         },
         {
             "Header": "Shipments",
+            "headerClassName": "react_table_th",
             "columns": [
                 {
+                    "Header": "Qty",
+                    "className": "react_custom_data_rows",
+                    "headerClassName": "react_table_th",
+                    "accessor": "quantity"
+                },
+                {
                     "Header": "Actual Mix",
+                    "className": "react_custom_data_rows",
+                    "headerClassName": "react_table_th",
                     "accessor": "actualMix"
                 },
                 {
                     "Header": "Target Mix",
+                    "className": "react_custom_data_rows",
+                    "headerClassName": "react_table_th",
                     "accessor": "targetMix"
                 }
             ]
+        },
+        {
+            "Header": "ASR",
+            "className": "react_custom_data_rows",
+            "headerClassName": "react_table_th",
+            "accessor": "asr"
         }
     ],
     "tableData": [
@@ -52,7 +95,9 @@
                     "offnet": "20%",
                     "total": 23729,
                     "quantity": 28937,
-                    "actualMix": "4%"
+                    "actualMix": "4%",
+                    "targetMix": "5%",
+                    "asr": "82%"
                 },
                 {
                     "channel": "Company Owned",
@@ -62,7 +107,9 @@
                     "offnet": "19%",
                     "total": 183608,
                     "quantity": 195397,
-                    "actualMix": "27%"
+                    "actualMix": "27%",
+                    "targetMix": "30%",
+                    "asr": "94%"
                 },
                 {
                     "channel": "Franchises",
@@ -72,7 +119,9 @@
                     "offnet": "9%",
                     "total": 212473,
                     "quantity": 238734,
-                    "actualMix": "33%"
+                    "actualMix": "33%",
+                    "targetMix": "35%",
+                    "asr": "89%"
                 },
                 {
                     "channel": "Online",
@@ -82,7 +131,9 @@
                     "offnet": "25%",
                     "total": 40473,
                     "quantity": 43534,
-                    "actualMix": "6%"
+                    "actualMix": "6%",
+                    "targetMix": "8%",
+                    "asr": "93%"
                 },
                 {
                     "channel": "Call Centre",
@@ -92,17 +143,21 @@
                     "offnet": "14%",
                     "total": 76473,
                     "quantity": 86534,
-                    "actualMix": "12%"
+                    "actualMix": "12%",
+                    "targetMix": "13%",
+                    "asr": "88%"
                 },
                 {
-                    "channel": "Call Centre",
+                    "channel": "Back Order",
                     "acquisition": "25%",
                     "recontract": "51%",
                     "outright": "18%",
                     "offnet": "6%",
                     "total": 116473,
                     "quantity": 130534,
-                    "actualMix": "18%"
+                    "actualMix": "18%",
+                    "targetMix": "20%",
+                    "asr": "88%"
                 },
                 {
                     "channel": "ALL CHANNELS",
@@ -112,7 +167,97 @@
                     "offnet": "13%",
                     "total": 620473,
                     "quantity": 720534,
-                    "actualMix": "100%"
+                    "actualMix": "100%",
+                    "asr": "86%"
+                }
+            ]
+        },
+        {
+            "region": "Greater London",
+            "code": "GL",
+            "data": [
+                {
+                    "channel": "Enterprise",
+                    "acquisition": "18%",
+                    "recontract": "36%",
+                    "outright": "16%",
+                    "offnet": "10%",
+                    "total": 2729,
+                    "quantity": 2237,
+                    "actualMix": "2%",
+                    "targetMix": "3%",
+                    "asr": "62%"
+                },
+                {
+                    "channel": "Company Owned",
+                    "acquisition": "20%",
+                    "recontract": "35%",
+                    "outright": "9%",
+                    "offnet": "11%",
+                    "total": 11608,
+                    "quantity": 15397,
+                    "actualMix": "22%",
+                    "targetMix": "25%",
+                    "asr": "81%"
+                },
+                {
+                    "channel": "Franchises",
+                    "acquisition": "22%",
+                    "recontract": "39%",
+                    "outright": "11%",
+                    "offnet": "5%",
+                    "total": 12473,
+                    "quantity": 38734,
+                    "actualMix": "18%",
+                    "targetMix": "22%",
+                    "asr": "81%"
+                },
+                {
+                    "channel": "Online",
+                    "acquisition": "18%",
+                    "recontract": "38%",
+                    "outright": "11%",
+                    "offnet": "10%",
+                    "total": 10473,
+                    "quantity": 13534,
+                    "actualMix": "2%",
+                    "targetMix": "4%",
+                    "asr": "87%"
+                },
+                {
+                    "channel": "Call Centre",
+                    "acquisition": "60%",
+                    "recontract": "51%",
+                    "outright": "3%",
+                    "offnet": "12%",
+                    "total": 12473,
+                    "quantity": 20534,
+                    "actualMix": "18%",
+                    "targetMix": "21%",
+                    "asr": "74%"
+                },
+                {
+                    "channel": "Back Order",
+                    "acquisition": "19%",
+                    "recontract": "44%",
+                    "outright": "14%",
+                    "offnet": "3%",
+                    "total": 11473,
+                    "quantity": 14534,
+                    "actualMix": "13%",
+                    "targetMix": "26%",
+                    "asr": "76%"
+                },
+                {
+                    "channel": "ALL CHANNELS",
+                    "acquisition": "25%",
+                    "recontract": "41%",
+                    "outright": "11%",
+                    "offnet": "9%",
+                    "total": 20473,
+                    "quantity": 20534,
+                    "actualMix": "90%",
+                    "asr": "81%"
                 }
             ]
         }

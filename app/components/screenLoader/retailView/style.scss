@@ -1,8 +1,54 @@
+:global {
+    @import './react-table.scss';
+    .react_table_th {
+        background-color: #DDDDDD;
+        font-weight: 600;
+    }
+    .react_custom {
+        font-size: 13px;
+    }
+    .react_custom_data_rows {
+        text-align: right;
+    }
+    .ReactTable .rt-tbody .rt-tr-group:last-child {
+        font-weight: 600;
+    }
+}
+
 .retail_container {
     display: flex;
     flex-direction: column;
+    ._search_bar {
+        height: 35px;
+        background-color: #DEDCDA;
+        display: flex;
+        align-items: center;
+        ._label {
+            padding-left: 10px;
+            font-weight: bold;
+        }
+        ._sorting_container {
+            margin-left: 40px;
+            ._dropdown{
+                border-radius: 2px;
+                font-weight: bold;
+                height: 23px;
+            }
+        }
+    }
     ._top {
+        padding: 10px;
         min-height: 300px;
+        display: flex;
+        ._table {
+            width: 60%;
+        }
+        ._projected {
+            width: 15%;
+        }
+        ._slider {
+            width: 25%;
+        }
     }
     ._bottom {
         min-height: 300px;
