@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './style.scss';
 import HighMaps from '../../common/highMaps';
+import RunRateGraph from '../../common/runRateGraph';
 import ReactTable from 'react-table';
 import tableJson from '../../../data/tables/retail.json';
 
@@ -58,6 +59,9 @@ class RetailView extends Component {
         </div>
         <div className={`${styles._bottom}`}>
           <HighMaps />
+        </div>
+        <div>
+          <RunRateGraph />
         </div>
       </div>
     );
