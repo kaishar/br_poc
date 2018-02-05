@@ -3,6 +3,7 @@ import styles from './style.scss';
 import HighMaps from '../../common/highMaps';
 import ReactTable from 'react-table';
 import tableJson from '../../../data/tables/retail.json';
+import SliderComp from '../../slider';
 
 class RetailView extends Component {
   constructor() {
@@ -58,6 +59,9 @@ class RetailView extends Component {
         </div>
         <div className={`${styles._bottom}`}>
           <HighMaps />
+        </div>
+        <div>
+          <SliderComp />
         </div>
       </div>
     );
