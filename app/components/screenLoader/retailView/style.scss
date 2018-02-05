@@ -16,6 +16,7 @@
 }
 
 .retail_container {
+    background-color: #f3f3f3;
     display: flex;
     flex-direction: column;
     ._search_bar {
@@ -29,7 +30,7 @@
         }
         ._sorting_container {
             margin-left: 40px;
-            ._dropdown{
+            ._dropdown {
                 border-radius: 2px;
                 font-weight: bold;
                 height: 23px;
@@ -41,6 +42,7 @@
         min-height: 300px;
         display: flex;
         ._table {
+            background-color: #ffffff;
             width: 60%;
         }
         ._projected {
@@ -51,6 +53,9 @@
         }
     }
     ._bottom {
+        margin: 10px;
+        border: 2px solid grey;
         min-height: 300px;
+        display: flex;
     }
 }

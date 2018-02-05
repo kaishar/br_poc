@@ -12,7 +12,11 @@ class RunRateChart extends Component {
   }
 
   render() {
+    const { activations, shipments } = this.props;
     const mapConfig = config.runRateGraph;
+
+    mapConfig.series[0].data = shipments;
+    mapConfig.series[1].data = activations;
 
     return (
       <div className={`${styles.map_container}`}>

@@ -12,9 +12,9 @@ class ScreenLoader extends Component {
     ];
 
     const announcements = () =>{
-      return updateData.map((result) => {
+      return updateData.map((result, index) => {
         return (
-          <div className={`${styles._items}`}>{`- ${result}` }</div>
+          <div key={`updates__${index}`} className={`${styles._items}`}>{`- ${result}` }</div>
         );
       });
     };
