@@ -1,3 +1,22 @@
+:global {
+    @import './rc-slider.scss';
+}
+
 .slider_container {
-    width: 30%;
+    border: 2px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-evenly;
+    padding: 10px;
+    ._label_input {
+        display: flex;
+        justify-content: space-between;
+        .__label{
+            font-weight: bold;
+        }
+        .__input{
+            width: 48px;
+        }
+    }
 }

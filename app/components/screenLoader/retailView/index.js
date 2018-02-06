@@ -22,6 +22,8 @@ class RetailView extends Component {
   }
   render() {
     let tableData = _.find(tableJson.tableData, { 'code' : this.state.selectedSorted });
+    let activations = _.sortBy(_.map(tableData.data, 'total')),
+      shipments = _.sortBy(_.map(tableData.data, 'quantity')); 
 
     return (
       <div className={`${styles.retail_container}`}>
@@ -36,7 +38,7 @@ class RetailView extends Component {
                 onChange={(event) => this.sortingChange(event.target.value)}>
                 {
                   this.state.sortOptions.map((option) => {
-                    return <option id={option.value} value={option.value}>{option.name}</option>;
+                    return <option key={`__${option.value}`} id={option.value} value={option.value}>{option.name}</option>;
                   })
                 }
               </select>
@@ -56,16 +58,12 @@ class RetailView extends Component {
           <div className={`${styles._projected}`}>
           </div>
           <div className={`${styles._slider}`}>
+            <SliderComp />
           </div>
         </div>
         <div className={`${styles._bottom}`}>
+          <RunRateGraph activations={activations} shipments={shipments}/>
           <HighMaps />
-        </div>
-        <div>
-          <RunRateGraph />
-        </div>
-        <div>
-          <SliderComp />
         </div>
       </div>
     );

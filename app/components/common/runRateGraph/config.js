@@ -1,6 +1,3 @@
-let shipments = [2100, 34000, 144000, 189000, 350000, 554000, 650000],
-  activations = [1000, 20000, 120000, 168000, 300000, 520000, 610000];
-
 export const runRateGraph = {
   title : {
     text : 'Run Rate Graph'
@@ -29,7 +26,7 @@ export const runRateGraph = {
 
   series : [{
     name : 'Shipments',
-    data : shipments,
+    data : [],
     marker : {
       enabled : false
     },
@@ -38,7 +35,7 @@ export const runRateGraph = {
   }, 
   {
     name : 'Activations',
-    data : activations,
+    data : [],
     marker : {
       enabled : false
     },
