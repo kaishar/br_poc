@@ -9,7 +9,17 @@ class SliderComp extends Component {
     this.state = {
       min : 0,
       max : 100,
-      selected : 0
+      selected : 0,
+      customHandle : {
+        'position' : 'absolute',
+        'cursor' : 'pointer',
+        'width' : '10px',
+        'height' : '20px',
+        'border' : '1px solid #403939',
+        'borderRadius' : '1px',
+        'backgroundColor' : '#808080fa',
+        'margin-top' : '-8px'
+      }
     };
     this.sliderUpdate = this.sliderUpdate.bind(this);
   }
@@ -20,8 +30,17 @@ class SliderComp extends Component {
 
   render() {
     const marks = {
-      0 : '', 10 : '', 20 : '', 30 : '', 40 : '', 50 : '',
-      60 : '', 70 : '', 80 : '', 90 : '', 100 : ''
+      0 : { style : { 'color' : 'black', 'margin-top' : '-18px' }, label : '' }, 
+      10 : '', 
+      20 : '', 
+      30 : '', 
+      40 : '', 
+      50 : '',
+      60 : '', 
+      70 : '', 
+      80 : '', 
+      90 : '', 
+      100 : ''
     };
 
     return (
@@ -41,10 +60,11 @@ class SliderComp extends Component {
         </div>
         <Slider 
           value={this.state.selected} 
-          marks={marks}
           min={this.state.min} 
           max={this.state.max} 
-          onChange={this.sliderUpdate} />
+          onChange={this.sliderUpdate} 
+          trackStyle={{ backgroundColor : '#808080fa' }}
+          handleStyle={this.state.customHandle}/>
         <span>Impacted Volume:   {this.state.selected} %</span>
       </div>
     );
