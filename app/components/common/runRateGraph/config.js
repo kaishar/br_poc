@@ -14,7 +14,12 @@ export const runRateGraph = {
       value : 6,
       width : 2,
       label : {
-        text : 'Today'
+        text : 'Today',
+        rotation : 0,
+        y : 20,
+        style : {
+          color : 'red'
+        }
       }
     }]
   },
