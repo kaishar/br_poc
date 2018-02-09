@@ -1,4 +1,9 @@
 export const runRateBottomGraph = {
+  chart : {
+    type : 'line',
+    zoomType : 'x'
+  },
+
   xAxis : {
     min : 0,
     max : 13,

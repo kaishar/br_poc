@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './style.scss';
 import HighMaps from '../../common/highMaps';
+import DonutGraph from '../../common/donutGraph';
 import RunRateGraph from '../../common/runRateGraph';
 import RunRateBottomGraph from '../../common/RunRateBottomGraph';
 import ReactTable from 'react-table';
@@ -29,6 +30,8 @@ class RetailView extends Component {
     let avgUpSell = [0.7, 1.2, 2.2, 2, 2.9, 3.5, 4.7],
       avgChannelLog = [5.5, 5.4, 5.7, 5.89, 6, 5.5, 5.8],
       clvWeighting = [2.5, 2.5, 5, 5, 5, 5, 5];
+
+    //let totalSoh = [[ 'Warehouse SoH', 40 ], [ 'In Transit', 5 ], [ 'Channel SoH', 55 ]];
 
     return (
       <div className={`${styles.retail_container}`}>
@@ -72,6 +75,9 @@ class RetailView extends Component {
         </div>
         <div>
           <RunRateBottomGraph avgUpSell={avgUpSell} avgChannelLog={avgChannelLog} clvWeighting={clvWeighting}/>
+        </div>
+        <div>
+          <DonutGraph />
         </div>
       </div>
     );
