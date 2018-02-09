@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './style.scss';
 import HighMaps from '../../common/highMaps';
 import RunRateGraph from '../../common/runRateGraph';
+import RunRateBottomGraph from '../../common/RunRateBottomGraph';
 import ReactTable from 'react-table';
 import tableJson from '../../../data/tables/retail.json';
 import SliderComp from '../../slider';
@@ -23,7 +24,11 @@ class RetailView extends Component {
   render() {
     let tableData = _.find(tableJson.tableData, { 'code' : this.state.selectedSorted });
     let activations = _.sortBy(_.map(tableData.data, 'total')),
-      shipments = _.sortBy(_.map(tableData.data, 'quantity')); 
+      shipments = _.sortBy(_.map(tableData.data, 'quantity'));
+
+    let avgUpSell = [0.7, 1.2, 2.2, 2, 2.9, 3.5, 4.7],
+      avgChannelLog = [5.5, 5.4, 5.7, 5.89, 6, 5.5, 5.8],
+      clvWeighting = [2.5, 2.5, 5, 5, 5, 5, 5];
 
     return (
       <div className={`${styles.retail_container}`}>
@@ -64,6 +69,9 @@ class RetailView extends Component {
         <div className={`${styles._bottom}`}>
           <RunRateGraph activations={activations} shipments={shipments}/>
           <HighMaps />
+        </div>
+        <div>
+          <RunRateBottomGraph avgUpSell={avgUpSell} avgChannelLog={avgChannelLog} clvWeighting={clvWeighting}/>
         </div>
       </div>
     );
