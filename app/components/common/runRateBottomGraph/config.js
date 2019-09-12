@@ -1,6 +1,7 @@
-export const runRateGraph = {
-  title : {
-    text : 'Run Rate Graph'
+export const runRateBottomGraph = {
+  chart : {
+    type : 'line',
+    zoomType : 'x'
   },
 
   xAxis : {
@@ -16,7 +17,7 @@ export const runRateGraph = {
       label : {
         text : 'Today',
         rotation : 0,
-        y : 20,
+        y : 10,
         style : {
           color : 'red'
         }
@@ -25,26 +26,35 @@ export const runRateGraph = {
   },
 
   yAxis : {
-    max : 1000000,
+    max : 10,
     min : 0
   },
 
   series : [{
-    name : 'Shipments',
-    data : [],
-    marker : {
-      enabled : false
-    },
-    dashStyle : 'solid',
-    color : 'red'
-  }, 
-  {
-    name : 'Activations',
+    name : 'Avg Up-sell',
     data : [],
     marker : {
       enabled : false
     },
     dashStyle : 'dash',
-    color : 'red'
+    color : 'orange'
+  }, 
+  {
+    name : 'Avg Channel Log',
+    data : [],
+    marker : {
+      enabled : false
+    },
+    dashStyle : 'solid',
+    color : 'orange'
+  },
+  {
+    name : 'CLV weighting',
+    data : [],
+    marker : {
+      enabled : false
+    },
+    dashStyle : 'solid',
+    color : 'black'
   }]
 };
